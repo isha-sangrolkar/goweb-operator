@@ -24,7 +24,7 @@ spec:
       serviceAccountName: goweb-operator
       containers:
         - name: manager
-          image: quay.io/isha98/goweb-operator
+          image: quay.io/isha98/goweb-operator1
           imagePullPolicy: Always
           args:
             - "--enable-leader-election"
