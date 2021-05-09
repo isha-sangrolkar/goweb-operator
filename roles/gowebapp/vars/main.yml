@@ -1,0 +1,11 @@
+---
+frontend:
+  image: docker.io/ishasangrolkar/demo-app:latest
+  # To pass image pull secrets
+  imagePullSecrets: []
+  replicaCount: 1
+  
+  service:
+    type: NodePort
+    port: 3000
+    targetPort: 3000

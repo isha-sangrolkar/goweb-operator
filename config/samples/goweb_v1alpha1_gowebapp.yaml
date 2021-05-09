@@ -1,0 +1,13 @@
+apiVersion: goweb.com/v1alpha1
+kind: GoWebApp
+metadata:
+  name: gowebapp-sample
+spec:
+  frontend:
+    image: docker.io/ishasangrolkar/demo-app:latest
+    imagePullSecrets: []
+    replicaCount: 1
+    service:
+      port: 3000
+      targetPort: 3000
+      type: NodePort

@@ -1,0 +1,9 @@
+---
+# Use the 'create api' subcommand to add watches to this file.
+- version: v1alpha1
+  group: goweb.com
+  kind: GoWebApp
+  role: gowebapp
+  overrideValues:
+    frontend.image: $RELATED_IMAGE_FRONTEND
+# +kubebuilder:scaffold:watch
